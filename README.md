@@ -26,6 +26,7 @@ So English will often be my default, but I'll use French whenever it makes more 
 
 The repository is organized by topic and will evolve as I progress through my learning journey.
 
+```text
 test-quest/
 ├── README.md
 ├── README.fr.md
@@ -52,6 +53,7 @@ test-quest/
 │
 ├── projets-pratiques/
 └── templates/
+```
 
 ## 🤷 A quick disclaimer
 
