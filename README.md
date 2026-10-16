@@ -18,42 +18,9 @@ Here you'll find my notes, useful resources, tutorials, testing concepts, and pr
 
 Content can be in French or English, depending on the topic, context, and available resources.
 
-I'm French, but I find English quicker and more efficient to write, especially with a QWERTY keyboard. French is a bit more work to type, and all those accents don't help either. :P
-
-So English will often be my default, but I'll use French whenever it makes more sense. Don't expect perfect consistency!
-
 ## 🧭 Structure
 
 The repository is organized by topic and will evolve as I progress through my learning journey.
-
-```text
-test-quest/
-├── README.md
-├── README.fr.md
-│
-├── 00-organisation/
-│
-├── 01-semaines-1-2-prise-en-main-du-metier/
-├── 02-semaine-03-excel-et-testeur-agile/
-├── 03-semaine-04-linux-et-communication/
-├── 04-semaine-05-developpement-web-front-end/
-├── 05-semaine-06-accessibilite-web/
-├── 06-semaine-07-posture-du-consultant/
-├── 07-semaine-08-certification-istqb-foundation/
-├── 08-semaine-09-sql-et-git/
-├── 09-semaine-10-python/
-├── 10-semaine-11-python-et-devops/
-├── 11-semaine-12-selenium/
-├── 12-semaine-13-playwright-et-jmeter/
-├── 13-semaine-14-postman-et-katalon/
-├── 14-semaine-15-jira-et-xray/
-├── 15-semaine-16-robot-framework/
-├── 16-semaine-17-intelligence-artificielle/
-├── 17-semaine-18-projet-de-fin-d-etudes/
-│
-├── projets-pratiques/
-└── templates/
-```
 
 ## 🤷 A quick disclaimer
 

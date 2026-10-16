@@ -18,42 +18,9 @@ Tu y trouveras mes notes, des ressources utiles, des tutoriels, des concepts li�
 
 Le contenu peut être en français ou en anglais, selon le sujet, le contexte et les ressources disponibles.
 
-Je suis française, mais je trouve l’anglais plus rapide et plus pratique à écrire, surtout avec un clavier QWERTY. Le français me demande un peu plus d’efforts, et tous ces accents n’aident pas non plus. :P
-
-L’anglais sera donc souvent ma langue par défaut, mais j’utiliserai le français quand cela me semblera plus pertinent. Ne t’attends pas à une parfaite cohérence !
-
 ## 🧭 Organisation
 
 Le dépôt est organisé par thème et évoluera au fil de mon apprentissage.
-
-```text
-test-quest/
-├── README.md
-├── README.fr.md
-│
-├── 00-organisation/
-│
-├── 01-semaines-1-2-prise-en-main-du-metier/
-├── 02-semaine-03-excel-et-testeur-agile/
-├── 03-semaine-04-linux-et-communication/
-├── 04-semaine-05-developpement-web-front-end/
-├── 05-semaine-06-accessibilite-web/
-├── 06-semaine-07-posture-du-consultant/
-├── 07-semaine-08-certification-istqb-foundation/
-├── 08-semaine-09-sql-et-git/
-├── 09-semaine-10-python/
-├── 10-semaine-11-python-et-devops/
-├── 11-semaine-12-selenium/
-├── 12-semaine-13-playwright-et-jmeter/
-├── 13-semaine-14-postman-et-katalon/
-├── 14-semaine-15-jira-et-xray/
-├── 15-semaine-16-robot-framework/
-├── 16-semaine-17-intelligence-artificielle/
-├── 17-semaine-18-projet-de-fin-d-etudes/
-│
-├── projets-pratiques/
-└── templates/
-```
 
 ## 🤷 Petite mise en garde
 
