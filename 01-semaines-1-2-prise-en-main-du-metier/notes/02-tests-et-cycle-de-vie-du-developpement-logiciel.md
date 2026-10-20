@@ -249,5 +249,6 @@ Cet exercice montre qu’un même changement peut nécessiter plusieurs niveaux 
 - [Manifeste Agile](https://agilemanifesto.org/iso/fr/manifesto.html) : valeurs et principes qui ont influencé les approches agiles.
 - [Glossaire ISTQB](https://glossary.istqb.org/) : définitions des termes liés aux niveaux, types et cycles de vie de test.
 - [CFTL — Comité Français des Tests Logiciels](https://cftl.fr/) : ressources et informations sur les tests logiciels en français.
+- [GitHub Docs — Intégration continue avec GitHub Actions](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration) : exemple de pipeline qui construit le projet et exécute les tests à chaque changement.
 
 _Cette fiche est une synthèse personnelle destinée à l’apprentissage. En cas de différence de formulation, se référer au syllabus ISTQB officiel et aux supports de formation._

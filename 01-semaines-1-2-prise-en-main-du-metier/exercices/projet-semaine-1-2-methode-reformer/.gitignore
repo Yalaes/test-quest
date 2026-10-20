@@ -1,0 +1,13 @@
+# Temporary files and operating-system metadata
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# Local environment files must never be committed
+.env
+.env.*
+!.env.example
+
+# Raw screenshots may contain personal, account, or consent information
+/preuves/captures-ecran/brutes/

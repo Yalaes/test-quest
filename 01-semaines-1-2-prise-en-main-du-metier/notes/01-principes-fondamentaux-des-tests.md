@@ -159,5 +159,6 @@ Cet exemple illustre plusieurs principes : les tests exhaustifs sont impossibles
 - [ISTQB — Certified Tester Foundation Level (CTFL) v4.0](https://istqb.org/certifications/certified-tester-foundation-level) : syllabus officiel, structure du programme et exemples d’examens.
 - [CFTL — Comprendre les tests](https://cftl.fr/tests-logiciels/comprendre-les-tests/) : ressources du Comité Français des Tests Logiciels, représentant de l’ISTQB en France.
 - [Glossaire ISTQB](https://glossary.istqb.org/) : définitions normalisées du vocabulaire du test logiciel.
+- [GitHub Docs — Démarrage avec GitHub Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart) : exemple d’outil pour consigner et suivre un défaut, sans confondre le suivi du défaut avec le test lui-même.
 
 _Cette fiche est une synthèse personnelle destinée à l’apprentissage. En cas de différence de formulation, se référer au syllabus ISTQB officiel et aux supports de formation._
