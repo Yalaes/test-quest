@@ -71,11 +71,11 @@ Quelques pratiques sont utiles quel que soit le modèle choisi :
 
 Les tests peuvent suivre une approche **dirigée par les tests** (_test-driven approach_), par exemple lorsqu’une équipe écrit d’abord des tests qui guident ensuite le développement. Cette approche est détaillée plus loin.
 
-## 4. Les niveaux de test (Test Levels / ?Unit Tests?)
+## 4. Les niveaux de test (Test Levels )
 
 Un **niveau de test** (_test level_) représente un ensemble d’activités de test organisé autour d’un objectif et d’un périmètre particuliers. Les niveaux aident à structurer les tests, mais leur organisation exacte dépend du projet.
 
-### Test des composants (Component Testing)
+### Test des composants (Component Testing / ?Unit Tests?)
 
 Le test des composants vérifie une partie isolée du logiciel, par exemple une fonction, une classe ou un module.
 
