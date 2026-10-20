@@ -71,7 +71,7 @@ Quelques pratiques sont utiles quel que soit le modèle choisi :
 
 Les tests peuvent suivre une approche **dirigée par les tests** (_test-driven approach_), par exemple lorsqu’une équipe écrit d’abord des tests qui guident ensuite le développement. Cette approche est détaillée plus loin.
 
-## 4. Les niveaux de test (Test Levels)
+## 4. Les niveaux de test (Test Levels / ?Unit Tests?)
 
 Un **niveau de test** (_test level_) représente un ensemble d’activités de test organisé autour d’un objectif et d’un périmètre particuliers. Les niveaux aident à structurer les tests, mais leur organisation exacte dépend du projet.
 
@@ -89,7 +89,7 @@ Le test d’intégration vérifie les interactions entre plusieurs composants ou
 
 **Exemple :** vérifier que le service de commande transmet correctement le montant au service de paiement.
 
-### Test système (System Testing)
+### Test système (System Testing / ?E2E Tests?)
 
 Le test système vérifie le système dans son ensemble par rapport aux exigences et aux besoins définis.
 
