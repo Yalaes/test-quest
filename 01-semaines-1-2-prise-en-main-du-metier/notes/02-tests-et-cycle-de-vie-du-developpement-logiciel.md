@@ -12,6 +12,36 @@
 
 ## 1. Le cycle de vie du développement logiciel (Software Development Life Cycle, SDLC)
 
+## Les 7 phases du SDLC
+
+## 1. Planning — Planification
+
+Définir le problème, les objectifs, le budget, les risques et le périmètre.
+
+## 2. Requirements Analysis — Analyse des besoins
+
+Recueillir les exigences fonctionnelles et non fonctionnelles, les user stories et les critères d’acceptation.
+
+## 3. Design — Conception
+
+Définir l’architecture, la base de données, l’API, l’UX/UI et la sécurité.
+
+## 4. Development — Développement
+
+Écrire le code frontend et backend, intégrer les composants et versionner les changements.
+
+## 5. Testing — Tests et assurance qualité
+
+Vérifier les exigences, détecter les bugs, tester les intégrations et la sécurité.
+
+## 6. Deployment — Déploiement
+
+Livrer le logiciel dans l’environnement de production.
+
+## 7. Maintenance — Maintenance et évolution
+
+Surveiller le fonctionnement, corriger les bugs, mettre à jour et ajouter des fonctionnalités.
+
 ## SDLC --- Phase 1 : Planning (planification)
 
 La phase de *Planning* consiste à déterminer ce que l'on veut
@@ -321,6 +351,309 @@ l'analyse détaillée des exigences (*Requirements Analysis*). En Agile,
 certaines décisions sont affinées progressivement plutôt que toutes
 figées dès le départ.
 
+## SDLC --- Phase 2 - Recueillir les besoins
+
+Identifier les attentes du client, des utilisateurs et des autres parties prenantes (*stakeholders*).
+
+Exemple :
+- Le client veut permettre aux utilisateurs de réserver une table au restaurant.
+- Les utilisateurs veulent trouver un restaurant et réserver facilement.
+- Le restaurateur veut gérer les réservations et les disponibilités.
+
+## 3. Définir les exigences fonctionnelles
+
+Décrire **ce que le logiciel doit faire**.
+
+Exemples :
+- Un utilisateur peut rechercher un restaurant.
+- Un utilisateur peut choisir une date et une heure.
+- Le système peut enregistrer une réservation.
+- Le restaurateur peut consulter les réservations.
+
+## 4. Définir les exigences non fonctionnelles
+
+Décrire **comment le logiciel doit fonctionner**, notamment ses qualités et ses contraintes.
+
+Exemples :
+- Performance : les pages doivent se charger rapidement.
+- Sécurité : les données personnelles doivent être protégées.
+- Accessibilité : le site doit être utilisable au clavier.
+- Compatibilité : le site doit fonctionner sur les navigateurs ciblés.
+- Disponibilité : le service doit rester accessible autant que possible.
+
+## 5. Rédiger les User Stories
+
+Décrire un besoin du point de vue de l'utilisateur.
+
+Format courant :
+
+> En tant que [type d'utilisateur], je veux [action] afin de [bénéfice].
+
+Exemple :
+
+> En tant que client, je veux réserver une table en ligne afin de planifier mon repas.
+
+## 6. Définir les critères d'acceptation
+
+Préciser les conditions qui doivent être remplies pour considérer une fonctionnalité comme correcte.
+
+Exemple pour la réservation :
+- La date et l'heure doivent être valides.
+- Le créneau doit être disponible.
+- Les informations obligatoires doivent être renseignées.
+- La réservation doit être enregistrée.
+- Une confirmation doit être affichée à l'utilisateur.
+
+## 7. Identifier les règles métier
+
+Définir les règles propres au fonctionnement de l'application.
+
+Exemples :
+- Une réservation ne peut pas être faite sur un créneau complet.
+- Un utilisateur ne peut pas réserver une date passée.
+- Le restaurateur peut annuler une réservation.
+
+## 8. Identifier les contraintes et dépendances
+
+Lister les éléments qui peuvent limiter ou influencer le développement.
+
+Exemples :
+- Budget et délais imposés.
+- Technologies à utiliser.
+- Obligations légales, comme le RGPD.
+- Dépendances à des API ou services externes.
+- Compatibilité avec certains navigateurs ou appareils.
+
+## 9. Vérifier et valider les exigences
+
+S'assurer que les exigences sont :
+- **Claires** : elles ne prêtent pas à confusion.
+- **Complètes** : les informations nécessaires sont présentes.
+- **Cohérentes** : elles ne se contredisent pas.
+- **Testables** : il est possible de vérifier leur respect.
+- **Traçables** : elles peuvent être reliées aux tests correspondants.
+
+## 10. Livrables de cette phase
+
+À la fin de l'analyse, on peut disposer de :
+- Un document de spécifications (*requirements specification*).
+- Une liste d'exigences fonctionnelles et non fonctionnelles.
+- Un ensemble de user stories.
+- Des critères d'acceptation.
+- Des règles métier.
+- Une liste de contraintes et de dépendances.
+- Des exigences prêtes à être priorisées et planifiées.
+
+---
+
+## Le rôle du testeur QA
+
+Le testeur peut intervenir dès cette phase pour :
+- Repérer les exigences ambiguës ou manquantes.
+- Vérifier que les exigences sont testables.
+- Identifier les cas limites et les erreurs possibles.
+- Poser des questions sur les comportements attendus.
+- Préparer les futurs scénarios de test.
+
+**Exemple :** que doit-il se passer si deux clients tentent de réserver la dernière table disponible au même moment ?
+
+---
+
+## À ne pas confondre
+
+| Élément | Rôle | Exemple |
+|---|---|---|
+| Besoin | Exprime une attente | Réserver facilement une table |
+| Exigence | Définit ce que le logiciel doit faire | Le système doit permettre de réserver un créneau disponible |
+| User story | Présente le besoin du point de vue utilisateur | En tant que client, je veux réserver une table |
+| Critère d'acceptation | Définit les conditions de réussite | Une réservation valide doit être enregistrée |
+| Cas de test | Décrit comment vérifier le comportement | Réserver un créneau disponible et vérifier la confirmation |
+
+## Checklist
+
+- [ ] Identifier les utilisateurs et les parties prenantes.
+- [ ] Recueillir les besoins.
+- [ ] Définir les exigences fonctionnelles.
+- [ ] Définir les exigences non fonctionnelles.
+- [ ] Rédiger les user stories.
+- [ ] Définir les critères d'acceptation.
+- [ ] Identifier les règles métier.
+- [ ] Recenser les contraintes et dépendances.
+- [ ] Vérifier que les exigences sont claires et testables.
+- [ ] Faire valider les exigences avant de poursuivre.
+
+## SDLC — Phase 3 : Design (Conception)
+
+## 1. Objectif
+
+Définir comment le logiciel sera construit à partir des exigences établies lors de la phase d'analyse.
+
+Cette phase transforme **ce que le logiciel doit faire** en une conception technique et visuelle qui guidera le développement.
+
+## 2. Concevoir l'architecture technique
+
+Définir les grandes parties du système et la manière dont elles communiquent.
+
+Exemples :
+- Frontend : interface utilisée par les utilisateurs.
+- Backend : logique métier et traitement des requêtes.
+- Base de données : stockage des informations.
+- API : communication entre le frontend et le backend.
+- Services externes : paiement, géolocalisation, notifications, etc.
+
+Exemple pour une application de réservation :
+- React pour le frontend.
+- Node.js et Express pour le backend.
+- MongoDB pour la base de données.
+- API REST pour les échanges entre frontend et backend.
+
+## 3. Concevoir la base de données
+
+Définir les données à stocker, leur structure et leurs relations.
+
+Exemple :
+- Users : utilisateurs.
+- Restaurants : restaurants.
+- Reservations : réservations.
+- Availability : disponibilités.
+
+Déterminer :
+- Les champs de chaque entité.
+- Les types de données.
+- Les relations entre les données.
+- Les contraintes d'intégrité.
+- Les index nécessaires aux recherches.
+- Les règles de validation.
+
+## 4. Concevoir l'API
+
+Définir comment les différentes parties du logiciel échangeront des données.
+
+Pour une API REST, préciser :
+- Les endpoints.
+- Les méthodes HTTP.
+- Les paramètres et les données attendues.
+- Les réponses renvoyées.
+- Les codes de statut HTTP.
+- L'authentification et les autorisations.
+- La gestion des erreurs.
+
+Exemples :
+- `GET /restaurants` : récupérer les restaurants.
+- `GET /restaurants/:id` : consulter un restaurant.
+- `POST /reservations` : créer une réservation.
+- `DELETE /reservations/:id` : annuler une réservation.
+
+## 5. Concevoir l'UX/UI
+
+Définir l'expérience utilisateur et l'apparence de l'interface.
+
+### UX — User Experience
+
+L'UX concerne la facilité avec laquelle l'utilisateur accomplit ses tâches.
+
+Exemples :
+- Organiser le parcours de réservation.
+- Réduire le nombre d'étapes.
+- Prévoir les messages d'erreur.
+- Faciliter la navigation.
+
+### UI — User Interface
+
+L'UI concerne les éléments visuels et interactifs.
+
+Exemples :
+- Couleurs et typographie.
+- Boutons et formulaires.
+- Mise en page.
+- Menus et composants.
+- Adaptation aux mobiles et aux ordinateurs.
+
+Livrables possibles :
+- Wireframes : maquettes simplifiées.
+- Maquettes graphiques : apparence détaillée des écrans.
+- Prototypes : versions interactives permettant de tester les parcours.
+
+## 6. Définir la sécurité
+
+Prévoir la protection des données et des fonctionnalités dès la conception.
+
+Exemples :
+- Authentification des utilisateurs.
+- Contrôle des autorisations côté serveur.
+- Validation des données reçues.
+- Protection contre les injections et les attaques courantes.
+- Gestion sécurisée des mots de passe et des secrets.
+- Limitation des requêtes abusives.
+- Protection des données personnelles.
+
+La sécurité ne doit pas reposer uniquement sur le frontend : les contrôles essentiels doivent aussi être réalisés côté serveur.
+
+## 7. Définir les choix techniques
+
+Sélectionner les technologies, bibliothèques et outils adaptés au projet.
+
+Exemples :
+- Langages et frameworks.
+- Base de données.
+- Outils de test.
+- Gestion de versions avec Git.
+- Environnements de développement et de production.
+- CI/CD et hébergement.
+
+Les choix doivent tenir compte des besoins, des compétences disponibles, du budget, de la maintenance et de la sécurité.
+
+## 8. Préparer la stratégie de test
+
+Anticiper la manière dont le logiciel sera vérifié.
+
+Exemples :
+- Tests unitaires : vérifier une fonction isolément.
+- Tests d'intégration : vérifier les échanges entre composants.
+- Tests end-to-end (E2E) : vérifier un parcours complet.
+- Tests de sécurité.
+- Tests de performance.
+- Tests d'accessibilité.
+
+Le testeur QA peut examiner la conception pour détecter les risques et préparer les futurs cas de test.
+
+## 9. Livrables de cette phase
+
+Selon le projet, la phase de conception peut produire :
+- Un schéma d'architecture.
+- Un modèle de données.
+- Une spécification de l'API.
+- Des wireframes et des maquettes UI.
+- Un prototype interactif.
+- Des décisions techniques documentées.
+- Des règles de sécurité.
+- Une stratégie de test initiale.
+
+## 10. Checklist
+
+- [ ] Définir l'architecture technique.
+- [ ] Définir les composants frontend et backend.
+- [ ] Concevoir le modèle de données.
+- [ ] Définir les endpoints de l'API.
+- [ ] Concevoir les parcours UX.
+- [ ] Créer les maquettes UI nécessaires.
+- [ ] Définir les choix technologiques.
+- [ ] Prévoir les mesures de sécurité.
+- [ ] Anticiper les tests.
+- [ ] Vérifier que la conception répond aux exigences.
+
+---
+
+## À ne pas confondre
+
+| Élément | Rôle | Exemple |
+|---|---|---|
+| Requirements Analysis | Définit ce que le logiciel doit faire | Le client peut réserver une table |
+| Design | Définit comment le logiciel sera conçu | Un formulaire React envoie une requête à une API Express |
+| Development | Construit le logiciel | Programmer le formulaire et l'endpoint |
+| Testing | Vérifie le comportement réel | Vérifier qu'une réservation valide est enregistrée |
+
+**À retenir :** la conception sert de plan de construction. Elle réduit les ambiguïtés et les erreurs avant que le développement ne commence.
 ## 2. Modèles de cycle de vie et tests (Life Cycle Models and Testing)
 
 ### Modèle séquentiel (Sequential Model)
