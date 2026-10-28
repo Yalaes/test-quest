@@ -12,7 +12,7 @@
 
 ## 1. Le cycle de vie du développement logiciel (Software Development Life Cycle, SDLC)
 
-# SDLC --- Phase 1 : Planning (planification)
+## SDLC --- Phase 1 : Planning (planification)
 
 La phase de *Planning* consiste à déterminer ce que l'on veut
 construire, pourquoi, pour qui, avec quels moyens et quelles
