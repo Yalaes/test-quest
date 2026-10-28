@@ -12,20 +12,314 @@
 
 ## 1. Le cycle de vie du développement logiciel (Software Development Life Cycle, SDLC)
 
-Le **cycle de vie du développement logiciel** (_software development life cycle_, **SDLC**) désigne les activités réalisées pour concevoir, développer, livrer et maintenir un logiciel.
+# SDLC --- Phase 1 : Planning (planification)
 
-Selon le projet, ces activités peuvent comprendre :
+La phase de *Planning* consiste à déterminer ce que l'on veut
+construire, pourquoi, pour qui, avec quels moyens et quelles
+contraintes.
 
-- l’analyse des besoins et des exigences (_requirements analysis_) ;
-- la conception de la solution ;
-- le développement ;
-- les tests ;
-- le déploiement ;
-- la maintenance et les évolutions.
+Prenons un exemple concret tout au long de l'explication : **une
+application web de réservation de tables pour les restaurants**, simple
+et abordable.
 
-Le test logiciel (_software testing_) ne constitue pas une activité isolée qui commencerait uniquement lorsque le développement est terminé. Les activités de test s’intègrent au cycle de vie choisi et peuvent commencer dès l’analyse des exigences.
+## 1. Définir le problème (*Define the problem*)
 
-**Exemple :** avant même que le code d’une règle de remboursement soit écrit, une revue peut révéler que les exigences ne précisent pas si les frais de livraison sont remboursés.
+Il faut identifier la difficulté réelle que le logiciel doit résoudre.
+
+Un problème n'est pas encore une solution technique.
+
+**Exemple :**
+
+-   Problème : les petits restaurants reçoivent leurs réservations par
+    téléphone ou par messages, ce qui leur fait perdre du temps.
+-   Conséquence : ils peuvent oublier des réservations, répondre
+    tardivement ou avoir des doublons.
+-   Besoin : disposer d'un moyen simple de centraliser les réservations.
+
+Dire « je veux créer une application React » décrit une solution
+technique, pas le problème à résoudre.
+
+**Question à se poser :** quelle difficulté rencontrent les utilisateurs
+aujourd'hui ?
+
+## 2. Définir les objectifs (*Define the objectives*)
+
+Un objectif décrit le résultat que le projet doit atteindre.
+
+Il faut distinguer l'objectif du projet de la fonctionnalité qui
+permettra de l'atteindre.
+
+Exemple :
+
+-   Objectif : réduire le temps consacré à la gestion des réservations.
+-   Fonctionnalité : permettre aux clients de réserver une table en
+    ligne.
+-   Indicateur : mesurer le temps consacré à la gestion des réservations
+    avant et après la mise en place du système.
+
+Un bon objectif peut être mesurable. On utilise parfois la méthode SMART
+: spécifique, mesurable, atteignable, pertinent et défini dans le temps.
+
+Par exemple : « Réduire de 30 % le temps quotidien consacré à la gestion
+des réservations après deux mois d'utilisation », si cet objectif est
+réaliste et mesurable.
+
+**Question à se poser :** comment saura-t-on que le projet a réussi ?
+
+## 3. Identifier les utilisateurs (*Identify the users*)
+
+Il faut savoir qui utilisera le logiciel et quels sont les besoins de
+chaque catégorie d'utilisateurs.
+
+On parle de *stakeholders* pour désigner les parties prenantes : toutes
+les personnes ou organisations concernées par le projet, même si elles
+n'utilisent pas directement l'application.
+
+Dans notre exemple :
+
+  -----------------------------------------------------------------------
+  Acteur                              Besoin
+  ----------------------------------- -----------------------------------
+  Client                              Réserver une table facilement
+
+  Restaurateur                        Consulter et gérer les réservations
+
+  Administrateur                      Gérer les comptes et les paramètres
+                                      de la plateforme
+
+  Responsable du projet               Vérifier que le produit répond aux
+                                      objectifs
+
+  Développeur                         Comprendre ce qu'il doit construire
+
+  Testeur QA                          Vérifier que le comportement
+                                      correspond aux exigences
+  -----------------------------------------------------------------------
+
+Les utilisateurs et les parties prenantes ne sont donc pas exactement la
+même chose.
+
+**Question à se poser :** qui utilise, finance, développe, valide ou
+subit les conséquences du logiciel ?
+
+## 4. Définir le périmètre (*Define the scope*)
+
+Le *scope* définit ce qui est inclus dans le projet et ce qui n'est pas
+inclus.
+
+C'est essentiel pour éviter le *scope creep*, c'est-à-dire l'ajout
+progressif de nouvelles fonctionnalités sans réévaluation du temps, du
+budget ou des ressources.
+
+Exemple :
+
+**Inclus dans la première version (MVP) :**
+
+-   Consultation des disponibilités.
+-   Création d'une réservation.
+-   Confirmation.
+-   Espace restaurateur pour gérer les réservations.
+
+**Exclu de la première version :**
+
+-   Paiement en ligne.
+-   Programme de fidélité.
+-   Gestion des livraisons.
+-   Application mobile native.
+
+Le MVP (*Minimum Viable Product*) est la première version suffisamment
+fonctionnelle pour apporter une valeur réelle et recueillir des retours.
+
+**Question à se poser :** que doit-on absolument livrer dans la première
+version, et que peut-on reporter ?
+
+## 5. Définir les contraintes (*Constraints*)
+
+Une contrainte est une limite que le projet doit respecter.
+
+Les contraintes peuvent être :
+
+-   **Temporelles** : le produit doit être livré avant une date précise.
+-   **Budgétaires** : le budget disponible est limité.
+-   **Techniques** : l'équipe doit utiliser une technologie
+    particulière.
+-   **Humaines** : l'équipe comporte un seul développeur ou peu de
+    spécialistes.
+-   **Légales** : le logiciel doit respecter les règles applicables,
+    notamment en matière de données personnelles.
+-   **Opérationnelles** : l'application doit fonctionner sur les
+    navigateurs et appareils ciblés.
+
+Exemple : le projet doit être développé en MERN, avec un budget
+d'hébergement limité et une première version livrable en huit semaines.
+
+Attention : une contrainte est une limite imposée ou convenue. Une
+préférence, comme vouloir utiliser React, n'est pas forcément une
+contrainte tant que cette décision n'est pas obligatoire.
+
+**Question à se poser :** quelles limites influencent nos décisions ?
+
+## 6. Estimer les ressources (*Estimate the resources*)
+
+Les ressources sont les moyens nécessaires pour réaliser le projet.
+
+On distingue notamment :
+
+-   **Ressources humaines** : développeurs, testeurs, designer, chef de
+    projet.
+-   **Ressources techniques** : ordinateurs, serveurs, bases de données,
+    outils.
+-   **Ressources financières** : hébergement, nom de domaine, licences,
+    rémunérations.
+-   **Temps disponible** : heures de travail et durée du projet.
+
+Exemple : un développeur seul peut réaliser un MVP plus simple qu'une
+équipe comprenant un développeur frontend, un développeur backend, un
+designer et un testeur.
+
+L'estimation doit tenir compte non seulement du développement, mais
+aussi des tests, de la documentation, du déploiement et des corrections.
+
+**Question à se poser :** de quels moyens avons-nous besoin et lesquels
+avons-nous déjà ?
+
+## 7. Identifier les risques (*Identify the risks*)
+
+Un risque est un événement incertain qui pourrait avoir un effet négatif
+sur le projet. Il peut affecter le budget, le délai, la sécurité, la
+qualité ou la réussite commerciale.
+
+Un risque n'est pas la même chose qu'un problème déjà survenu : une fois
+qu'il se produit, on parle généralement d'incident ou de problème avéré.
+
+Exemples :
+
+  -----------------------------------------------------------------------
+  Risque                  Conséquence possible    Mesure préventive
+  ----------------------- ----------------------- -----------------------
+  Réservations en double  Mauvaise expérience     Concevoir une gestion
+                          client                  fiable des conflits de
+                                                  réservation
+
+  Fuite de données        Atteinte à la           Contrôler les accès,
+                          confidentialité         protéger les données et
+                                                  tester la sécurité
+
+  Retard de développement Livraison tardive       Limiter le MVP et
+                                                  prévoir une marge
+
+  Faible adoption         Peu de restaurants      Tester le concept avec
+                          utilisent l'application des restaurateurs avant
+                                                  d'investir davantage
+
+  Perte de données        Réservations perdues    Prévoir des sauvegardes
+                                                  et tester leur
+                                                  restauration
+  -----------------------------------------------------------------------
+
+Dans certains projets, on évalue chaque risque selon deux critères :
+
+-   **Probabilité** : quelle est la chance qu'il se produise ?
+-   **Impact** : quelles seraient les conséquences s'il se produisait ?
+
+On peut ensuite prioriser les risques les plus importants.
+
+**Question à se poser :** qu'est-ce qui pourrait mal se passer, et
+comment réduire les conséquences ?
+
+## 8. Définir le planning (*Create the schedule*)
+
+Le planning organise le travail dans le temps.
+
+Il identifie les phases, les tâches, les dépendances et les échéances.
+
+Exemple simplifié :
+
+  Période         Travail
+  --------------- -------------------------------------
+  Semaine 1       Analyse du besoin et spécifications
+  Semaine 2       UX/UI et architecture
+  Semaines 3--4   API et base de données
+  Semaines 4--5   Interface React et intégration
+  Semaines 5--6   Tests, corrections et sécurité
+  Semaine 7       Préproduction et recette
+  Semaine 8       Déploiement et suivi initial
+
+Dans la réalité, certaines activités peuvent se dérouler en parallèle.
+Le planning doit donc tenir compte des dépendances : par exemple,
+l'interface peut être développée à partir d'un contrat d'API défini,
+sans attendre que tout le backend soit terminé.
+
+**Question à se poser :** dans quel ordre travailler, combien de temps
+prévoir et quelles tâches dépendent des autres ?
+
+## 9. Définir le budget (*Estimate the budget*)
+
+Le budget correspond au coût estimé du projet.
+
+Il peut inclure :
+
+-   Le temps de travail des personnes impliquées.
+-   L'hébergement et la base de données.
+-   Le nom de domaine.
+-   Les outils et licences.
+-   Les services externes, par exemple l'envoi d'e-mails.
+-   La maintenance et les corrections.
+-   Une réserve pour les imprévus.
+
+Même pour un projet personnel, il est utile de distinguer le coût
+financier réel du temps investi.
+
+**Question à se poser :** combien le projet va-t-il coûter pour être
+construit, livré et maintenu ?
+
+## 10. Définir les critères de réussite (*Success criteria*)
+
+Les critères de réussite permettent de déterminer si le projet atteint
+ses objectifs.
+
+Ils doivent être vérifiables, et pas simplement subjectifs.
+
+Exemples :
+
+-   Un client peut créer une réservation valide.
+-   Une réservation ne peut pas être créée sur un créneau indisponible.
+-   Le restaurateur peut consulter ses réservations.
+-   Les utilisateurs ne peuvent pas accéder aux données auxquelles ils
+    n'ont pas droit.
+-   Les parcours critiques réussissent les tests définis.
+-   Les performances respectent les objectifs convenus.
+-   Les premiers restaurants pilotes utilisent effectivement le service.
+
+Il faut distinguer les critères de réussite du projet des critères
+d'acceptation d'une fonctionnalité : les premiers évaluent le résultat
+global, les seconds vérifient une fonctionnalité précise.
+
+**Question à se poser :** quelles preuves nous permettront d'affirmer
+que le projet est réussi ?
+
+------------------------------------------------------------------------
+
+## Résumé de la phase Planning
+
+À la fin de cette phase, on doit pouvoir répondre clairement à ces dix
+questions :
+
+-   [ ] Quel problème résout-on ?
+-   [ ] Quels résultats veut-on atteindre ?
+-   [ ] Qui sont les utilisateurs et parties prenantes ?
+-   [ ] Qu'est-ce qui est inclus ou exclu du projet ?
+-   [ ] Quelles sont les contraintes ?
+-   [ ] Quelles ressources sont nécessaires ?
+-   [ ] Quels sont les principaux risques ?
+-   [ ] Quel est le planning prévisionnel ?
+-   [ ] Quel est le budget estimé ?
+-   [ ] Comment mesurera-t-on la réussite ?
+
+Une fois ces éléments suffisamment définis, le projet peut passer à
+l'analyse détaillée des exigences (*Requirements Analysis*). En Agile,
+certaines décisions sont affinées progressivement plutôt que toutes
+figées dès le départ.
 
 ## 2. Modèles de cycle de vie et tests (Life Cycle Models and Testing)
 
